@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input:focus {
+
+            border: 2px solid blue;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body class="">
+
+
+<header class="bg-gray-600 text-white text-center py-6 mb-9">
+    <h1 class="text-6xl font-bold">Customer Portal</h1>
+</header>
+<form method="post">
+<div class="container mx-auto bg-gray-300 w-5/6 h-max p-2 rounded-lg flex flex-wrap ">
+    <div class="w-1/2  flex flex-col mb-9">
+        <label for="ssn" class="text-xl" >Customer SSN No:</label>
+        <input type="text" id="ssn" maxlength="7" placeholder="Enter SSN" class="w-11/12 rounded-lg h-12 text-lg p-2" required>
+        <p id="ssnError"></p>
+    </div>
+    <div class="w-1/2  flex flex-col mb-9">
+        <label for="name" class="text-xl">Customer Name:</label>
+        <input type="text" id="name" maxlength="50" placeholder="Enter Name" class="w-11/12 rounded-lg h-12 text-lg p-2 required">
+        <p id="nameError"></p>
+    </div>
+    <div class="w-1/2  flex flex-col mb-9">
+        <label for="email" class="text-xl">Email:</label>
+        <input type="email" id="email" placeholder="Enter Email" class="w-11/12 rounded-lg h-12 text-lg p-2 required">
+        <p id="emailError"></p>
+    </div>
+    <div class="w-1/2  flex flex-col mb-9">
+        <label for="address" class="text-xl">Address:</label>
+        <input type="text" id="address" maxlength="100" placeholder="Enter Address" class="w-11/12 rounded-lg h-12 text-lg p-2 required">
+        <p id="AddressError"></p>
+    </div>
+    <div class="w-1/2  flex flex-col mb-9">
+        <label for="contact" class="text-xl">Contact Number:</label>
+        <input type="text" id="contact" maxlength="10" placeholder="Enter Contact Number" class="w-11/12 rounded-lg h-12 text-lg p-2 required">
+        <p id="ContactError"></p>
+    </div>
+    <div class="w-1/2  flex flex-col mb-9">
+        <label for="aadhar" class="text-xl">Aadhar Number:</label>
+        <input type="text" id="aadhar" maxlength="12" placeholder="Enter Aadhar Number" class="w-11/12 rounded-lg h-12 text-lg p-2 required">
+        <p id="Error"></p>
+    </div>
+    <div class="w-1/2  flex flex-col mb-9 ">
+        <label for="pan" class="text-xl">PAN Number:</label>
+        <input type="text" id="pan" maxlength="10" placeholder="Enter PAN Number" class="w-11/12 rounded-lg h-12 text-lg p-2">
+
+    </div>
+    <div class="w-1/2  flex flex-col mb-9">
+        <label for="account" class="text-xl ">Account Number:</label>
+        <input type="text" id="account" maxlength="20" placeholder="Enter Account Number" class="w-11/12 rounded-lg h-12 text-lg p-2">
+
+    </div>
+    <div class="w-1/2  flex flex-col mb-9">
+        <label for="deposit" class="text-xl">Initial Deposit Amount:</label>
+        <input type="number" id="deposit" placeholder="Enter Deposit Amount" class="w-11/12 rounded-lg h-12 text-lg p-2">
+
+    </div>
+
+    <div class="w-full">
+        <button class="bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700" type="submit">Submit</button>
+    </div>
+</div>
+</form>
+
+</body>
+</html>
